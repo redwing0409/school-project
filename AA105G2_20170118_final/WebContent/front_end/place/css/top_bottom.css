@@ -1,0 +1,44 @@
+.login,.nav_option{
+	background-color: #f8f8f8;
+}
+.login:hover,.nav_option:hover{
+	background-color: hsl(0,70%,95%);
+	text-decoration:underline;
+}
+#logo1{
+	height: 6%;
+	width: 19%;
+}
+#logo2{
+	height: 6%;
+	width: 24%;
+	margin-left: -3%;
+}
+.dd{
+	margin-left: -33%;
+}
+
+#the_footer{
+	background:#444444;
+	color:#ffffff;
+	clear:both;
+	//border-top:1px solid steelblue;
+	height:5%;
+	padding:10px;
+	text-align:center;
+	position: fixed;
+	bottom:0;
+	width: 100%;
+}
+
+.content{
+	height: 500px;
+}
+
+.option_text{
+	font:bold 17px tahoma;
+}
+body{
+	background-color: #fffbf7;
+}
+

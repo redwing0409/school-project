@@ -1,0 +1,21 @@
+#table1{
+	margin-left: 750px;
+	background-color: lightpink;
+}
+
+#place{
+	width: 25vh;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+tr,td {
+	border-bottom: 1px solid #000000;
+	width: 300px;
+	height: 90px;
+    text-align: center;
+}
+
+textarea{
+	resize: none;
+}

@@ -1,0 +1,18 @@
+.h4{
+	color:red;
+}
+ul{
+	list-style-type:disc;
+}
+.b{
+	font-size:10px !important;
+}
+#panel1,#panel2{
+	background-color:#ff60af;
+	color:white;
+	text-align: center;
+
+}
+#select{
+	width: 15%;
+}

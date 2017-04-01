@@ -1,0 +1,46 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="Big5"%>
+<div style="float:right;margin-top:-20px">
+<table border="0">    
+ <tr>
+  <%if (rowsPerPage<rowNumber) {%>
+  <nav aria-label="Page navigation example">
+  	<ul class="pagination">
+    <%if(pageIndex>=rowsPerPage){%>
+       <li class="page-item"><A class="page-link" href="<%=request.getContextPath()%>/com/com.do?whichPage=1&action=listCom_ByCompositeQuery">至第一頁</A>&nbsp;</li>
+       <li class="page-item"><A class="page-link" href="<%=request.getContextPath()%>/com/com.do?whichPage=<%=whichPage-1%>&action=listCom_ByCompositeQuery">上一頁 </A>&nbsp;</li>
+    <%}%>
+  
+    <%if(pageIndex<pageIndexArray[pageNumber-1]){%>
+       <li class="page-item"><A class="page-link" href="<%=request.getContextPath()%>/com/com.do?whichPage=<%=whichPage+1%>&action=listCom_ByCompositeQuery">下一頁 </A>&nbsp;</li>
+       <li class="page-item"><A class="page-link" href="<%=request.getContextPath()%>/com/com.do?whichPage=<%=pageNumber%>&action=listCom_ByCompositeQuery">至最後一頁</A>&nbsp;</li>
+    <%}%>
+          </ul>
+  </nav>
+  <%}%>  
+ </tr>
+</table>
+</div>    
+
+<%if ( pageNumber > 1) {%>
+<div style="float:left">
+<table border="0">   
+ <tr> 
+   <FORM METHOD="post" ACTION="<%=request.getContextPath()%>/com/com.do">   
+      <tr>
+        <td>
+           <select class="form-control" size="1" name="whichPage">
+        <%for (int i=1; i<=pageNumber; i++){%>
+           <option value="<%=i%>">跳至第<%=i%>頁</option>
+        <%}%> 
+           </select>
+        </td>
+        <td>
+           <input class="form-control" type="submit" value="確定" >
+           <input type="hidden" name="action"  value="listCom_ByCompositeQuery">  
+         </td>
+     </tr>
+   </FORM>
+ </tr>
+</table>
+</div>
+<%}%>

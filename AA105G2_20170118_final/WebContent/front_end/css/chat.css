@@ -1,0 +1,607 @@
+.div{
+	display: block;
+}
+#mwt_mwt_slider_scroll {
+	top: 0;
+	right: -360px;
+	width: 360px;
+	position: fixed;
+	z-index: 9999;
+}
+
+#mwt_slider_content {
+	background: #ffc595;
+	text-align: center;
+	padding-top: 20px;
+}
+
+#mwt_fb_tab {
+	position: absolute;
+	top: 50%;
+	left: -24px;
+	width: 24px;
+	background: orange;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: center;
+	padding: 9px 0;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+}
+
+#mwt_fb_tab span {
+	display: block;
+	height: 24px;
+	padding: 1px 0;
+	line-height: 12px;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+.chatBox {
+	position: fixed;
+	bottom: 0px;
+	right: 400px;
+	background-color: #ddd;
+	z-index: 9999;
+}
+
+.chatWrapper {
+	transform: translateZ(0);
+	bottom: 0;
+	direction: ltr;
+	height: 28px;
+	left: 129px;
+	position: fixed;
+/*	right: 0px;*/
+	z-index: 300;
+	display: block;
+ /* 	background-color: #e9ebee; */
+/*  	下面那塊 */
+}
+._50-v,.chatDock{
+	font-size: 13px;
+    line-height: 16px;
+    margin: 0 15px;
+}
+.chatContainer{
+	float: right;
+}
+.chatContainer>div{
+	float: left;
+    position: relative;
+}
+.chatNubGroup{
+	float: left;
+    position: relative;
+}
+.clearfix{
+	zoom: 1;
+}
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+}
+.chatWrapperRight {
+	right: auto;
+	left: 129px;
+}
+.fbNub._50mz.opened{
+	width:260px;
+}
+._50-v.opened{
+	margin-left:9px;
+}
+.fbNub._50mz {
+    height: 28px;
+    width: 160px;
+}
+.fbNubFlyout {
+    box-shadow: none;
+}
+.fbDockChatTabFlyout {
+    display: block;
+}
+div.fbNub._50mz .fbDockChatTabFlyout {
+    bottom: 0;
+    height: 335px;
+    position: absolute;
+    width: 100%;
+}
+.rNubContainer .fbNubFlyout {
+    left: auto;
+    right: 0;
+}
+.fbNub._50mz .fbNubFlyoutInner {
+    background: transparent;
+    border: 0;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3);
+}
+.fbNub._50mz .fbNubFlyoutTitlebar {
+    border: 0;
+}
+.fbNub._50mz.highlightTab .fbNubButton, .fbNub._50mz .fbNubFlyoutTitlebar {
+    background: #f6f7f9;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .20);
+    color: #191919;
+    height: 26px;
+    padding-right: 3px;
+    z-index: 2;
+}
+.fbNubFlyoutTitlebar {
+    cursor: pointer;
+    position: relative;
+}
+.fbNubFlyoutTitlebar, ._50-v .noTitlebar, ._50-v.openToggler .fbNubFlyoutTitlebar {
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.fbNub._50mz .fbNubFlyoutHeader {
+    border: none;
+    clear: both;
+    position: relative;
+}
+.fbNubButton, .fbNubButton:hover, ._50-v.openToggler .fbNubButton, .fbNubFlyout, .fbNubFlyout .flyoutInner, .fbNubFlyoutTitlebar, .fbNubFlyoutHeader, .fbNubFlyoutBody, .fbNubFlyoutFooter {
+    background-clip: padding-box;
+}
+.fbNubFlyoutHeader, .fbNubFlyoutBody, .fbNubFlyoutFooter, .fbNubFlyoutAttachments {
+    background-color: #fff;
+    border: 1px solid rgba(29, 49, 91, .3);
+    border-width: 0 1px;
+}
+._1ia {
+    position: relative;
+}
+._50m_ .titlebarButtonWrapper {
+    margin-left: 12px;
+}
+._ohf {
+    float: right;
+}
+._3a61 {
+    display: inline-block;
+    height: 26px;
+    margin-right: 1px;
+    vertical-align: top;
+}
+.fbNub._50mz .titlebar .titlebarLabel {
+    line-height: initial;
+    padding-top: 1px;
+}
+.fbNubFlyoutTitlebar .titlebarLabel {
+    color: #fff;
+    font-weight: bold;
+    line-height: 18px;
+    padding: 3px 7px 4px;
+}
+.fbNub._50mz .titlebar .titlebarTextWrapper {
+    color: #4b4f56;
+    font-size: 13px;
+    line-height: 26px;
+    margin: 0 8px 3px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+._3a61 {
+    display: inline-block;
+    height: 26px;
+    margin-right: 1px;
+    vertical-align: top;
+}
+/****** 燈號 ******/
+._2nlt, ._3olv._2nlt {
+    background: #42b72a;
+    border-radius: 50%;
+    display: none;
+    height: 6px;
+    margin: 0 3px 1px 0;
+    vertical-align: middle;
+    width: 6px;
+}
+._3olv {
+    display: inline-block;
+    height: 26px;
+    opacity: .7;
+    transition: opacity .15s;
+    -webkit-user-drag: none;
+    width: 22px;
+}
+h4{
+	padding:0px;
+	display: block;
+    -webkit-margin-before: 1.33em;
+    -webkit-margin-after: 1.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+.fbNub._50mz .titlebar .titlebarText, .fbNub._50mz.highlightTab .fbNubButton .name, .fbNub._50mz.highlightTab .fbNubButton, .fbNub._50mz.focusedTab .fbNubButton .name {
+    color: #4b4f56;
+}
+._1sk5 {
+    width: 100%;
+}
+ .hidden_elem {
+    display: none !important;
+}
+._1sk6 {
+    background: #fff;
+    background-clip: padding-box;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    max-height: 140px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 0 3px;
+    position: relative;
+    z-index: 1;
+}
+._3bpu {
+    bottom: -20px;
+    position: absolute;
+    width: 100%;
+}
+._2hc2 {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+._4g6x {
+    background-color: rgba(255, 255, 255, .95);
+    border: 2px dashed #7e97ba;
+    box-sizing: border-box;
+    display: none;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 150;
+}
+.fbDockChatTabFlyout ._2v5j {
+    background: #fff;
+    overflow: hidden;
+}
+.fbNub._50mz .fbNubFlyoutBody {
+    background-color: #fff;
+    border: 0;
+}
+.fbNubButton, .fbNubButton:hover, ._50-v.openToggler .fbNubButton, .fbNubFlyout, .fbNubFlyout .flyoutInner, .fbNubFlyoutTitlebar, .fbNubFlyoutHeader, .fbNubFlyoutBody, .fbNubFlyoutFooter {
+    background-clip: padding-box;
+}
+.fbNubFlyoutBody {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+.scrollable {
+    overflow-y: auto;
+}
+.fbNub._50mz .fbNubFlyoutBodyContent, .fbNub._50mz .conversationContainer {
+    height: 100%;
+    width: 100%;
+}
+.hidden_elem {
+    display: none !important;
+}
+._av1 {
+    box-sizing: border-box;
+    color: #90949c;
+    line-height: 16px;
+    padding: 24px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    word-wrap: break-word;
+    z-index: 1;
+}
+.fbNub._50mz .conversationContainer {
+    table-layout: fixed;
+}
+._51mz {
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+ ._-kb button, #facebook ._-kb input, #facebook ._-kb label, #facebook ._-kb select, #facebook ._-kb td, #facebook ._-kb textarea {
+    font-family: inherit;
+    letter-spacing: inherit;
+}
+._51mz ._51m-:first-child {
+    padding-left: 0;
+}
+._51mx:last-child>._51m- {
+    padding-bottom: 0;
+}
+._51mx:first-child>._51m- {
+    padding-top: 0;
+}
+._51mz {
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+._51mz ._51mw {
+    padding-right: 0;
+}
+.uiGrid .vBot {
+    vertical-align: bottom;
+}
+.accessible_elem {
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+.fbNub._50mz .conversationContainer .conversation {
+    padding-top: 3px;
+}
+/* 聊天記錄 */
+/* 時間 */
+._5w-5 {
+    display: block;
+    height: 2px;
+    margin: 16px 0 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+._5w-6{
+	color: #90949c;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 0 5px;
+    position: relative;
+    top: -8px;
+}
+/* 對話記錄 */
+._3__- ._4tdt {
+    margin-right: 9px;
+}
+._ua1 {/* 對方 */
+    justify-content: flex-start;
+}
+._ua0 {/* 自己 */
+    justify-content: flex-end;
+}
+._4tdt {
+    align-items: flex-end;
+    display: flex;
+    margin: 10px 9px 10px 8px;
+    position: relative;
+}
+/* 對方留言 */
+._4tdt ._ua2 {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+}
+/* 大頭照 */
+._4tdt ._4tdw {
+    height: 28px;
+    position: relative;
+    width: 28px;
+}
+._1nc7._2cnu {
+    padding-top: 0;
+}
+._5wd4 {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.28;
+    padding: 0 0 1px 0;
+    text-align: left;
+}
+.direction_ltr {
+    direction: ltr;
+}
+._h8t {
+    flex-direction: column;
+}
+._1nc7 ._5wd9 {
+    margin-left: 8px;
+}
+._5wd4 ._5wd9 {
+    min-height: 24px;
+}
+._5wd4:last-child {
+    padding-bottom: 0;
+}
+._1nc7 ._5wde, ._1nc7 ._3e7u {
+    clear: left;
+    float: left;
+}
+._n4o {
+    position: relative;
+}
+._1nc7:last-of-type ._n4o:last-of-type ._3_om, ._1nc7:last-of-type ._n4o:last-of-type ._4i_6 {
+    border-bottom-left-radius: 12px;
+}
+._1nc7:first-of-type ._n4o:first-of-type ._3_om {
+    border-top-left-radius: 12px;
+}
+._1nc7 ._n4o ._3_om {
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+}
+._1nc7 ._5wdf, ._2cnu._2_-t ._5wdf {
+    margin: 0;
+}
+._n4o ._3_om {
+    border-radius: 2px;
+}
+._1nc7 ._5w1r {
+    background-color: #f1f0f0;
+    float: left;
+    margin: 1px 0 0;
+}
+._5w1r {
+    background-size: 100% 100% \0/;
+    border: 0;
+    color: #4b4f56;
+    min-height: 22px;
+    min-width: 14px;
+    overflow: hidden;
+    position: relative;
+    white-space: pre-wrap; 
+}
+._d97 {
+    padding: 5px 8px 4px;
+}
+
+/* 自己留言 */
+._1nc6 {
+    justify-content: flex-end;
+}
+._5wd4 {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.28;
+    padding: 0 0 1px 0;
+    text-align: left;
+}
+._h8t {
+    flex-direction: column;
+}
+._1nc6 ._d97 {
+    background-color: #ddd;
+}
+._1nc6:last-of-type ._n4o:last-of-type ._3_om, ._1nc6:last-of-type ._n4o:last-of-type ._4i_6 {
+    border-bottom-right-radius: 12px;
+}
+._1nc6:first-of-type ._n4o:first-of-type ._3_om {
+    border-top-right-radius: 12px;
+}
+._1nc6 ._n4o ._3_om {
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+}
+._n4o ._3_om {
+    border-radius: 2px;
+}
+._1nc6 ._5w1r {
+    background-color: #fff;
+    color: #000000;
+    text-shadow: none;
+}
+/* 聊天室窗結束 */
+ .accessible_elem {
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+.fbNub._50mz .fbNubFlyoutFooter {
+    background: #fff;
+    min-height: 32px;
+}
+.fbNub._50mz .fbNubFlyoutFooter {
+    border: 0;
+    padding-bottom: 25px;
+    position: relative;
+}
+.fbNub._50mz .fbNubFlyoutFooter:before {
+    background-color: #fff;
+    border-color: #7f7f7f;
+    border-style: solid;
+    border-width: 0 1px;
+    bottom: -1px;
+    content: '';
+    height: 1px;
+    margin-left: -1px;
+    position: absolute;
+    width: 100%;
+}
+/* .fbNub._50mz .fbNubFlyoutFooter:after { */
+/*     background-color: rgba(0, 0, 0, .1); */
+/*     content: ''; */
+/*     height: 1px; */
+/*     position: absolute; */
+/*     top: -1px; */
+/*     width: 100%; */
+/* } */
+._552h {
+    border-top: 1px solid #c9d0da;
+    border-top-width: 0;
+    cursor: text;
+    max-height: 77px;
+    min-height: 16px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 10px 8px 6px;
+    position: relative;
+}
+._552n {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+._5rp7 {
+    position: relative;
+}
+._5rp7, ._5rpb, ._5rpu {
+    height: inherit;
+    text-align: initial;
+}
+._552m::-webkit-input-placeholder, .fbNub._50mz ._1p1t {
+    color: #dddfe2;
+}
+._5rp8 ._1p1t {
+    left: 0;
+    text-align: left;
+}
+._1p1t {
+    color: #90949c;
+    position: absolute;
+    z-index: 0;
+}
+._5rpb {
+    background-color: rgba(255, 255, 255, 0);
+    border-left: .1px solid transparent;
+    position: relative;
+    z-index: 1;
+}
+._5rp7, ._5rpb, ._5rpu {
+    height: inherit;
+    text-align: initial;
+}
+._5rpu[contenteditable="true"] {
+    -webkit-user-modify: read-write-plaintext-only;
+}
+._552h ._5rpu {
+    word-wrap: break-word;
+}
+._5rp7, ._5rpb, ._5rpu {
+    height: inherit;
+    text-align: initial;
+}
+._5rp8 ._1mf {
+    text-align: left;
+}
+._1mj {
+    direction: ltr;
+    text-align: left;
+}
+._1mf {
+    position: relative;
+    white-space: pre-wrap;
+}

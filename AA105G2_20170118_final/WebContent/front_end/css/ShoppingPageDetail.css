@@ -1,0 +1,165 @@
+/* 網頁背景 */
+*{
+    font-family: 微軟正黑體;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width:1257px;
+    min-width: 980px;
+    background:url(../images/secondBG.png) 50% 0 no-repeat fixed; 
+}
+
+img{
+    border: 0;
+}
+
+#nav2{
+    list-style: none;
+    z-index: 2;
+    position: fixed;
+    margin-top:1%;
+}
+
+#nav2 a{
+    text-decoration: none;
+    color:#000;
+}
+
+#nab2 h5{
+   text-align:center; 
+}
+
+#intro{
+    width: 100%;
+}
+
+#intro{
+    height:700px;
+    margin: 0 auto;
+    padding: 0;
+    z-index: -100;
+}
+/* 網頁背景結束 */
+
+/* 標題底線特效 */
+.line {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+.line:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease-in-out, background-color .5s ease-in-out;
+}
+
+.line:hover:after {
+    width: 100%;
+    background: #FF60AF;
+}
+/* 標題底線特效結束 */
+
+/* 第一頁透明背景 */
+#bgpanel{
+    background: transparent url(../images/img/transparent.png);
+    width: 980px;
+    height: 550px;
+    overflow: hidden;
+    float: right;
+    position: relative;
+    margin: 9% 12.5px 0 0;
+    margin-right:138px;
+}
+/* 第一頁透明背景 end */
+
+/* 右側導覽列 */
+.slidename{
+   position:fixed;
+   margin-top: 1%;
+   cursor: pointer;
+   z-index: 3;
+}
+
+.slidename a{
+    text-decoration: none;
+    color:#000;
+}
+
+.slidemenu{
+    margin-top:0.7%;
+    cursor: pointer;
+    z-index:100;
+    position:fixed;
+    color:#000;
+}
+
+.slidemain{
+    cursor: pointer;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+    z-index:100;
+}
+
+.slidesub{
+    text-align: center;
+    width: 100px;
+    position:fixed;
+    z-index:100;
+}
+
+.slidesub li{
+    background: transparent url(../images/img/transparent.png);      
+    height: 25px;
+    line-height:25px;
+    border-bottom: 1px dotted #FF60AF;
+    list-style-type:none;
+    z-index:100;
+    margin-top:-3%;
+}
+
+.slidesub a{
+    text-decoration: none;
+    color:#000;
+}
+
+/* 右側導覽列結束 */
+
+.divider{
+    margin:1% 0;
+}
+
+#bgpanel,.list-group-item,.thumbnail{
+    -moz-box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+    -webkit-box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+    box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+}       
+
+.list-group-item{
+line-height:17px;
+}
+
+.caption{
+  float: right; 
+  margin-top: -200px;
+}
+
+#buybtn{
+   margin-left:75px;
+}
+
+#buyprice{
+   margin-left:125px;
+   margin-bottom:10px;
+   padding-top:40px;
+}

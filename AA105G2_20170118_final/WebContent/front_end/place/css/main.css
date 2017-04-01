@@ -1,0 +1,422 @@
+/* 三個網頁背景 */
+*{
+    font-family: 微軟正黑體;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width:1257px;
+    min-width: 980px;
+    background:url(../images/secondBG.png) 50% 0 no-repeat fixed; 
+}
+
+img{
+    border: 0;
+}
+
+.float-left{
+    float: left;    
+    margin: 5px 0 0 -100px;
+}
+
+.float-right{
+    float: right;
+    margin: 20px 20px 0 0;
+}
+
+#nav{
+    list-style: none;
+    position: fixed;
+    z-index: 1;
+    right: 20px;
+    margin-top:200px; 
+}
+
+#nav2{
+    list-style: none;
+    z-index: 2;
+    margin-left:-47px;
+    position: fixed;
+    margin-top:1%;
+}
+
+#nav2 a{
+    text-decoration: none;
+    color:#000;
+}
+
+#navbar{
+ z-index:100;
+}
+
+#navbar a{
+   text-decoration:none;
+   color:#000;
+   z-index:-1;
+}
+
+#nav li{
+    margin: 0 0 15px 0; 
+}
+
+#header, #intro, #second{
+    width: 100%;
+}
+
+#intro{
+    height: 650px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#second{
+    height: 700px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#third{
+    color: black;
+    height:700px;
+    padding: 100px 0 0 0;   
+}
+
+.story .float-left, .story .float-right{
+    padding: 100px 0 0 0;
+    position: relative;
+    width: 350px;   
+}
+/* 三個網頁背景結束 */
+
+/* 標題底線特效 */
+.line{
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+.line:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease-in-out, background-color .5s ease-in-out;
+}
+
+.line:hover:after {
+    width: 100%;
+    background:#FF60AF;
+}
+/* 標題底線特效結束 */
+
+/* 第一頁透明背景 */
+#bgpanel{
+    background: transparent url(../images/img/transparent.png);
+    width: 980px;
+    height: 400px;
+    overflow: hidden;
+    float: right;
+    position: relative;
+    margin:10% 12.5px 0 0;
+    margin-right:138px;
+    -moz-box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+    -webkit-box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+    box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+}
+/* 第一頁透明背景 end */
+
+/* 第一頁文字效果 */
+.fonteffect{
+  float:left;
+  position: relative;
+  margin-left:570px;  
+
+}
+
+.demofont { 
+ font-weight: bold;
+ font-style: italic;
+ letter-spacing:1px;
+ color: #fff;
+ text-shadow: 0 1px 5px rgba(0,0,0,0.7);
+}
+
+#imgfont{
+  float:left;
+  margin-top:15px;
+  margin-left:-80px;
+  width:78px;
+  height:60px;
+} 
+/* 第一頁文字效果 end */
+
+/* 第一頁廣告輪轉特效 */
+#makeMeScrollable{
+    width:100%;
+    height: 310px;
+    position: relative;
+    float:right;
+}
+
+#makeMeScrollable div.scrollableArea img{   
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+/* 第一頁廣告輪轉結束 */
+
+/* 第二頁透明背景 */
+#bgpanel2{
+    background: transparent url(../images/img/transparent.png);
+    width: 980px;
+    height: 400px;
+    overflow: hidden;
+    float: right;
+    position: relative;
+    margin: 9% 12.5px 0 0;
+    margin-right:138px;
+    -moz-box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+    -webkit-box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+    box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+}
+
+/* 第二頁透明背景 end */
+
+/* 第二頁banner廣告 */
+#adall {
+    width: 540px;
+    height: 335px;
+    overflow: hidden;
+    float: left;
+}
+
+.adnav {
+    width: 540px;
+    height: 40px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-bottom: 1px solid #FF60AF;
+    padding-bottom: 3px;
+    text-align:center;
+    font-weight: bold;
+}
+
+.adnav ul{
+    display: inline-block;
+}
+
+.adnav li {
+    float: left;
+    list-style-type:none;
+    color:#000; 
+    font-weight: normal;
+    width: 100px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer
+}
+
+.adnav .active {
+    color:#FF60AF;
+    border-bottom: 3px solid #FF60AF;
+}
+
+.adbanner {
+    height: 335px;
+    position: relative;
+}
+
+.adbanner img {
+    float: left;
+}
+/* 第二頁banner廣告 end*/
+
+/* 第二頁討論區*/
+#discuss,#board{
+    float:left;
+    width:69%;
+    margin-top:5.1%;
+    margin-left:-3%;
+  /*   border-bottom: 1px solid #dddddd; */
+}
+
+#disnav,#boardnav{
+    margin-top:1.6%;
+    border-bottom: 1px solid #FF60AF;
+    font-weight: bold;
+}
+
+#more,#more2{
+    float: right;
+}
+
+#more>a, #more2>a{
+     text-decoration:none;
+     color:#fff;
+     background-color:#FF60AF;
+}
+
+#more>a:hover{
+   color: #000;
+}
+
+#listmenu > li{
+    text-decoration:none;
+    list-style: none;
+    width:80%;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    margin-top:2px;
+    margin-bottom: 2px;
+    border-bottom: 1px dotted #FF60AF;
+}
+
+#listmenu a{
+     text-decoration:none;
+     color:#000;
+}
+
+#listmenu a:hover{
+    color:#FF60AF;
+}
+
+.item{
+     float:left;
+}
+
+.username{
+     float:right;
+     width:20%;
+}
+
+.username > p{
+    margin:0px;
+    padding:0px;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+}
+
+/* 第二頁討論區 end*/
+
+/* 第三頁透明背景 */
+#bgpanel3{
+    background: transparent url(../images/img/transparent.png);
+    width: 980px;
+    height: 450px;
+    overflow: hidden;
+    float: right;
+    position: relative;
+    margin: 1% 12.5px 0 0;
+    margin-right:138px;
+    -moz-box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+    -webkit-box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+    box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+}
+
+/* 第三頁透明背景 end */
+
+/* 第三頁商品顯示*/
+.view {
+   width: 300px;
+   height: 200px;
+   margin: 10px;
+   float: left;
+   border: 5px solid #fff;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   box-shadow: 0px 0px 5px #aaa;
+   cursor: default;
+}
+.view .mask, .view .content {
+   width: 300px;
+   height: 200px;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+
+.view img {
+   display: block;
+   position: relative;
+}
+
+.view a.info {
+   background:url(../images/img/link.png) center no-repeat;
+   display: inline-block;
+   text-decoration: none;
+   padding:0;
+   text-indent:-9999px;
+   width:20px;
+   height:20px;
+}
+/*第三頁商品顯示結束*/
+
+
+/* 右側導覽列 */
+.slidename{
+   position:fixed;
+   margin-top: 1%;
+   cursor: pointer;
+   z-index: 3;
+}
+
+.slidename a{
+    text-decoration: none;
+    color:#000;
+}
+
+.slidemenu{
+  margin-top:0.7%;
+  cursor: pointer;
+  z-index:100;
+  position:fixed;
+  color:#000;
+}
+
+.slidemain{
+    cursor: pointer;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+    z-index:100;
+}
+
+.slidesub{
+    text-align: center;
+    width: 100px;
+    position:fixed;
+    z-index:100;
+}
+
+.slidesub li{
+    background: transparent url(../images/img/transparent.png);      
+    height: 25px;
+    line-height:25px;
+    border-bottom: 1px dotted #FF60AF;
+    list-style-type:none;
+    z-index:100;
+    margin-top:-3%;
+}
+
+.slidesub a{
+ text-decoration: none;
+ color:#000;
+}
+
+/* 右側導覽列結束 */

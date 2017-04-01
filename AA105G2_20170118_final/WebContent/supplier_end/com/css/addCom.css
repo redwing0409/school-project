@@ -1,0 +1,77 @@
+
+.login,.nav_option{
+	background-color: #fffbf7;
+	font-family: 微軟正黑體;
+}
+
+.login:hover,.nav_option:hover{
+	background-color:#f8f8f8;
+	font-family: 微軟正黑體;
+}
+
+#the_footer{
+	background:#444444;
+	color:#ffffff;
+	clear:both;
+	//border-top:1px solid steelblue;
+	height:5%;
+	padding:10px;
+	text-align:center;
+	position: fixed;
+	bottom:0;
+	width: 100%;
+}
+
+#logo{
+	//border:1px solid steelblue;
+	height: 50px;
+	width: 70px;
+}
+
+#logo-word{
+	height: 50px;
+	margin-left: -5px;
+}
+
+.container{
+	//border:1px solid steelblue;
+}
+
+.divider{
+	margin-top:3%;
+}
+.form-control,.btn,.panel{
+	-moz-box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+	-webkit-box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+	box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);
+}
+.panel-title,.list-group-item{
+	font-family:微軟正黑體;
+	vertical-align: middle;
+}
+.panel-title{
+	font-weight: bold;
+}
+.table{
+	text-align: center;
+	font-family: 微軟正黑體;
+	vertical-align: middle;
+	background-color: #FFF3EF;
+	width:40%;
+}	
+
+selectpicker{
+       margin: 0 auto;
+       float: none;
+}
+
+.btn{
+    border-radius:10px !important;
+}
+
+.form-control{
+	width:40%;
+}
+
+
+
